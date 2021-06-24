@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kubeserve
+namespace: ssbu-k2-devops
 spec:
   replicas: 5
   minReadySeconds: 10 # wait for 10 sec before pod is ready going to next
@@ -28,6 +29,7 @@ kind: Service
 apiVersion: v1
 metadata:
    name: kubeserve-svc
+   namespace: ssbu-k2-devops
 spec:
   type: NodePort
   ports:
