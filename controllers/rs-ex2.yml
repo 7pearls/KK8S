@@ -5,6 +5,7 @@ metadata:
   labels:
     app: sampleapp
     tier: frontend
+  namespace: ssbu-k2-devops
 spec:
   replicas: 3
   selector:
@@ -28,6 +29,7 @@ metadata:
   name: samplesvc
   labels:
     app: frontend
+  namespace: ssbu-k2-devops
 spec:
   type: NodePort
   ports:
