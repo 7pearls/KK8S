@@ -19,6 +19,7 @@ spec:
       name: kubeserve
       labels:
         app: kubeserve
+      namespace: ssbu-k2-devops
     spec:
       containers:
       - image: leaddevops/kubeserve:v1
